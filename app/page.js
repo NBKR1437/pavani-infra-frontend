@@ -85,7 +85,7 @@ export default function HomePage() {
 
           <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.7 }}
             className="text-stone-300 text-lg md:text-xl max-w-2xl mx-auto mb-4 leading-relaxed">
-            Guntur's trusted construction partner — delivering <span className="text-amber-400 font-semibold">APRERA</span> approved certified residential spaces built to last a lifetime.
+            Guntur's trusted construction partner — delivering <span className="text-amber-400 font-semibold">APRERA</span> approved residential spaces built to last a lifetime.
           </motion.p>
 
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.9 }}
