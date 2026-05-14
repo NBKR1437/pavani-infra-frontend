@@ -22,11 +22,8 @@ export default function ContactPage() {
     <main className="min-h-screen bg-[#0a0a0a] text-white">
       {/* Hero */}
       <div className="relative h-64 flex items-end pb-12 px-6 overflow-hidden">
-        <img
-          src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1800&q=80"
-          alt=""
-          className="absolute inset-0 w-full h-full object-cover opacity-30"
-        />
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1800&q=80" alt=""
+          className="absolute inset-0 w-full h-full object-cover opacity-30" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] to-transparent" />
         <div className="relative max-w-6xl mx-auto w-full">
           <p className="text-amber-400 text-xs tracking-[0.3em] uppercase mb-2">Reach Out</p>
@@ -41,14 +38,14 @@ export default function ContactPage() {
             We'd love to hear from you
           </h2>
           <p className="text-stone-400 leading-relaxed mb-10">
-            Whether you're looking for your first home, an investment property, or a commercial space — our team is here to guide you.
+            Looking to buy a home or start a development project in Guntur? Our team is here to help — no obligation, just honest advice.
           </p>
           <div className="space-y-6">
             {[
-              { label: "Phone", value: "+91 98765 43210", icon: "📞" },
-              { label: "Email", value: "info@pavaniinfra.com", icon: "✉️" },
-              { label: "Office", value: "Hyderabad, Telangana, India", icon: "📍" },
-              { label: "Hours", value: "Mon–Sat, 9am – 6pm", icon: "🕐" },
+              { label: "Phone", value: "+91 81848 62623", icon: "📞" },
+              { label: "Email", value: "pavaniinfra2021@gmail.com", icon: "✉️" },
+              { label: "Office", value: "501, 5th Floor, Pavani's Pride, Velangini Nagar, Guntur, Andhra Pradesh 522034", icon: "📍" },
+              { label: "Hours", value: "Mon–Sun, 9am – 9pm", icon: "🕐" },
             ].map((c) => (
               <div key={c.label} className="flex items-start gap-4">
                 <div className="w-10 h-10 rounded-xl bg-amber-400/10 border border-amber-400/20 flex items-center justify-center text-lg flex-shrink-0">
@@ -56,10 +53,20 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <p className="text-stone-500 text-xs uppercase tracking-wider mb-0.5">{c.label}</p>
-                  <p className="text-stone-200">{c.value}</p>
+                  <p className="text-stone-200 text-sm">{c.value}</p>
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Badges */}
+          <div className="flex gap-3 flex-wrap mt-8">
+            <div className="bg-amber-400/10 border border-amber-400/30 rounded-full px-4 py-2 text-amber-400 text-xs font-semibold">
+              ✓ CREDAI Member
+            </div>
+            <div className="bg-amber-400/10 border border-amber-400/30 rounded-full px-4 py-2 text-amber-400 text-xs font-semibold">
+              ✓ APRERA Approved
+            </div>
           </div>
         </div>
 
@@ -81,10 +88,7 @@ export default function ContactPage() {
               ].map((f) => (
                 <div key={f.key}>
                   <label className="text-stone-400 text-xs uppercase tracking-wider mb-1.5 block">{f.label} {f.required && "*"}</label>
-                  <input
-                    type={f.type}
-                    required={f.required}
-                    value={form[f.key]}
+                  <input type={f.type} required={f.required} value={form[f.key]}
                     onChange={(e) => setForm({ ...form, [f.key]: e.target.value })}
                     className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-400 transition placeholder:text-stone-600"
                   />
@@ -92,19 +96,14 @@ export default function ContactPage() {
               ))}
               <div>
                 <label className="text-stone-400 text-xs uppercase tracking-wider mb-1.5 block">Message</label>
-                <textarea
-                  rows={4}
-                  value={form.message}
-                  onChange={(e) => setForm({ ...form, message: e.target.value })}
+                <textarea rows={4} value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })}
                   className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-400 transition resize-none placeholder:text-stone-600"
                   placeholder="Tell us what you're looking for..."
                 />
               </div>
               {error && <p className="text-red-400 text-sm">{error}</p>}
-              <button
-                type="submit"
-                className="w-full bg-amber-400 text-black font-semibold py-3.5 rounded-full hover:bg-amber-300 hover:shadow-[0_0_20px_rgba(251,191,36,0.4)] transition-all mt-2"
-              >
+              <button type="submit"
+                className="w-full bg-amber-400 text-black font-semibold py-3.5 rounded-full hover:bg-amber-300 hover:shadow-[0_0_20px_rgba(251,191,36,0.4)] transition-all mt-2">
                 Send Enquiry
               </button>
             </form>
