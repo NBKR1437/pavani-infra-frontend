@@ -85,7 +85,7 @@ export default function HomePage() {
 
           <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.7 }}
             className="text-stone-300 text-lg md:text-xl max-w-2xl mx-auto mb-4 leading-relaxed">
-            Guntur's trusted construction partner — delivering <span className="text-amber-400 font-semibold">APRERA</span> approved, <span className="text-amber-400 font-semibold">CREDAI</span> certified residential spaces built to last a lifetime.
+            Guntur's trusted construction partner — delivering <span className="text-amber-400 font-semibold">APRERA</span> approved certified residential spaces built to last a lifetime.
           </motion.p>
 
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.9 }}
@@ -132,7 +132,7 @@ export default function HomePage() {
             Crafting spaces families are proud to call home
           </h2>
           <p className="text-stone-400 leading-relaxed mb-6">
-            Pavani Infra is a Guntur-based construction company and proud member of <H>CREDAI</H> — the Confederation of Real Estate Developers' Associations of India. Since 2021, we have been delivering <H>APRERA</H> approved homes that we don't just build — we live in them too. Every home we construct meets the same standard we would demand for our own family.
+            Pavani Infra is a Guntur-based construction company and our builder is a proud member of <H>CREDAI</H> — the Confederation of Real Estate Developers' Associations of India. Since 2021, we have been delivering <H>APRERA</H> approved homes that we don't just build — we live in them too. Every home we construct meets the same standard we would demand for our own family.
           </p>
           <Link href="/about" className="text-amber-400 text-sm hover:underline underline-offset-4">Our Story →</Link>
         </motion.div>

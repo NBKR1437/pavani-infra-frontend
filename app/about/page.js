@@ -12,8 +12,8 @@ const values = [
     desc: "As a CREDAI member, we follow a strict code of ethics in every project — transparent dealings, fair pricing, and quality that lasts.",
   },
   {
-    title: "We Live What We Build",
-    desc: "Our founders and team members live in Pavani Infra homes. We build to a standard we hold ourselves to personally — not just professionally.",
+    title: "Development Projects",
+    desc: "Beyond ready-to-move homes, we also take on custom development projects. Partner with us to build commercial or residential spaces tailored to your vision.",
   },
   {
     title: "Ready-to-Move Homes",
