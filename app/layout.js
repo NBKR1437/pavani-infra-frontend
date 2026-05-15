@@ -2,19 +2,57 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 
 export const metadata = {
-  title: "Pavani Infra | Construction Company in Guntur | APRERA Approved Homes",
+  metadataBase: new URL("https://pavaniinfraguntur.com"),
+
+  title:
+    "Pavani Infra | Construction Company in Guntur | APRERA Approved Homes",
+
   description:
-    "Pavani Infra is a CREDAI member construction company in Guntur, Andhra Pradesh. We build and sell APRERA approved, ready-to-move homes. Call +91 81848 62623.",
-  keywords:
-    "construction company in Guntur, Guntur construction company, APRERA approved homes Guntur, CREDAI builder Guntur, ready to move homes Guntur, Pavani Infra, residential projects Guntur, flats in Guntur, houses for sale Guntur, real estate Guntur",
+    "Pavani Infra is a CREDAI member construction company in Guntur, Andhra Pradesh. We build and sell APRERA approved, ready-to-move homes with premium quality construction.",
+
+  keywords: [
+    "construction company in Guntur",
+    "Guntur construction company",
+    "APRERA approved homes Guntur",
+    "CREDAI builder Guntur",
+    "ready to move homes Guntur",
+    "Pavani Infra",
+    "residential projects Guntur",
+    "flats in Guntur",
+    "houses for sale Guntur",
+    "real estate Guntur",
+    "2 BHK flats Guntur",
+    "3 BHK apartments Guntur",
+  ],
+
   openGraph: {
     title: "Pavani Infra | Construction Company in Guntur",
+
     description:
-      "CREDAI member, APRERA approved construction company in Guntur. Ready-to-move homes built with quality and trust since 2021.",
-    url: "https://www.pavaniinfraguntur.com",
+      "CREDAI member construction company in Guntur offering APRERA approved ready-to-move premium homes.",
+
+    url: "https://pavaniinfraguntur.com",
+
     siteName: "Pavani Infra",
+
     locale: "en_IN",
+
     type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title: "Pavani Infra | Construction Company in Guntur",
+
+    description:
+      "APRERA approved premium homes and residential projects in Guntur.",
+
+  },
+
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
