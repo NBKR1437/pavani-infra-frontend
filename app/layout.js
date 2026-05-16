@@ -9,7 +9,9 @@ export const metadata = {
 
   description:
     "Pavani Infra is a CREDAI member construction company in Guntur, Andhra Pradesh. We build and sell APRERA approved, ready-to-move homes with premium quality construction.",
-
+  icons: {
+    icon: "/icon.png",
+  },
   keywords: [
     "construction company in Guntur",
     "Guntur construction company",
